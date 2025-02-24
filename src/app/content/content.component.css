@@ -1,0 +1,229 @@
+.content {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.content1 {
+    width: 100%;
+}
+
+.contenttitle {
+    padding: calc(50/16 * 1rem) calc(16/16 * 1rem);
+    margin-left: calc(20/16 * 1rem);
+    font-size: calc(48/16 * 1rem);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.contenttitle2 {
+    padding: calc(16/16 * 1rem) calc(16/16 * 1rem);
+    margin-left: calc(24/16 * 1rem);
+    font-size: calc(42/16 * 1rem);
+    font-family: "Poppins", sans-serif;
+    color: #f44336;
+}
+
+
+.contenttitleline {
+    padding: calc(0/16 * 1rem) calc(16/16 * 1rem);
+    margin: auto;
+}
+
+.contenttitleline hr {
+    width: calc(70/16 * 1rem);
+    border: 5px solid red;
+    border-radius: calc(70/16 * 1rem);
+    margin-left: calc(20/16 * 1rem);
+}
+
+.contentpostergrid {
+    width: 100%;
+    position: relative;
+
+}
+
+.conpostimg1 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.conpostimg1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.imglayer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.conpostimg1:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.conpostimg1:hover .imglayer {
+    transform: rotate(360deg);
+    transition: transform 1.8s 0.5s;
+}
+
+
+.conpostimg2 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.conpostimg2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.conpostimg2:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.conpostimg2:hover .imglayer {
+    transform: rotate(360deg);
+    transition: transform 1.8s 0.5s;
+}
+
+
+.conpostimg3 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+.conpostimg3 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+
+
+.imglayer2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color: white;
+}
+
+.imglayer2 p {
+    margin: auto;
+    width: 70%;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.conpostimg3:hover{
+    transform: rotateY(180deg);
+    transition: transform, 1s;
+}
+
+.conpostimg4 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+.conpostimg4 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+
+
+
+.conpostimg4:hover{
+    transform: rotateY(180deg);
+    transition: transform, 1s;
+}
+
+.conpostimg5 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    position: relative;
+
+}
+
+.conpostimg5 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.conpostimg5:hover img {
+    opacity: 1;
+}
+
+.conpostimg6 {
+    width: 49%;
+    height: calc(410/16 * 1rem);
+    margin-top: calc(16/16 * 1rem);
+    margin-bottom: calc(-6/16 * 1rem);
+    margin-left: calc(10/16 * 1rem);
+    float: left;
+    position: relative;
+
+}
+
+.conpostimg6 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.conpostimg6:hover img {
+    opacity: 1;
+}
+
+.clr { 
+    clear: both;
+}

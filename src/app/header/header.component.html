@@ -1,0 +1,37 @@
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" 
+     style="z-index: 3; width: 300px; font-weight: bold;" 
+     [style.display]="isSidebarOpen ? 'block' : 'none'" 
+     id="mySidebar">
+    <br>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Dan's<br>Interior</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/showcase" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/services" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/designers" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/team" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Team</a>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/packages" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/contact" 
+           (click)="closeSidebar()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" (click)="openSidebar()">
+        <span class="w3-xlarge">☰</span> <!-- Hamburger icon -->
+    </a>
+    <span>Dan's Interior</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" (click)="closeSidebar()" 
+     [style.display]="isSidebarOpen ? 'block' : 'none'" 
+     style="cursor: pointer;" 
+     title="close side menu" id="myOverlay"></div>
